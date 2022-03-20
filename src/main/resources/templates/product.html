@@ -27,6 +27,26 @@
                     <p>Lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor lorem impus dolor</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p id="pexampleA">This is the style example 1</p>
+                </div>
+                <div class="col-md-6">
+                    <p id="pexampleB">This is the style example 2</p>
+                </div>
+            </div>
         </div>
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+        <style th:remove="all">
+            #pexampleA{
+                color: white;
+                background-color: lightgray;
+            }
+
+            #pexampleB{
+                color: white;
+                background-color: darkgray;
+            }
+        </style>
     </body>
 </html>
