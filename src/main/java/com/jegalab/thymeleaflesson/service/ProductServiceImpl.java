@@ -3,6 +3,7 @@ package com.jegalab.thymeleaflesson.service;
 import com.jegalab.thymeleaflesson.domain.Author;
 import com.jegalab.thymeleaflesson.domain.Category;
 import com.jegalab.thymeleaflesson.domain.Product;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 
     private Map<Integer, Product> productMap;
