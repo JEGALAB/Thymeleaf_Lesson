@@ -1,8 +1,9 @@
-package com.jegalab.thymeleaflesson.service;
+package com.jegalab.thymeleaflesson.service.implementation;
 
 import com.jegalab.thymeleaflesson.domain.Author;
 import com.jegalab.thymeleaflesson.domain.Category;
 import com.jegalab.thymeleaflesson.domain.Product;
+import com.jegalab.thymeleaflesson.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -30,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
         return new ArrayList<>(productMap.values());
     }
 
-    private void loadProducts(){
+    public void loadProducts(){
 
         Author at = new Author();
         at.setFirstName("Javier");
@@ -69,8 +70,9 @@ public class ProductServiceImpl implements ProductService {
         product1.setCourseName("Course Title 1");
         product1.setCourseSubtitle("Course Subtitle 1");
         product1.setCourseAuthor(at);
-        product1.setCoursePrice(new BigDecimal(19.99));
+        product1.setCoursePrice(new BigDecimal(19));
         product1.setCourseImageURL("https://game7staffing.com/media/seo/8-ENGINEER-STAFFING-FOR-EMERGING-TECH2.jpg");
+        product1.setCourseCategory(new ArrayList<Category>());
         product1.getCourseCategory().add(prodCat1);
         product1.getCourseCategory().add(prodCat2);
         product1.getCourseCategory().add(prodCat3);
@@ -82,8 +84,9 @@ public class ProductServiceImpl implements ProductService {
         product2.setCourseName("Course Title 2");
         product2.setCourseSubtitle("Course Subtitle 2");
         product2.setCourseAuthor(at);
-        product2.setCoursePrice(new BigDecimal(19.99));
+        product2.setCoursePrice(new BigDecimal(19));
         product2.setCourseImageURL("https://game7staffing.com/media/seo/8-ENGINEER-STAFFING-FOR-EMERGING-TECH2.jpg");
+        product2.setCourseCategory(new ArrayList<Category>());
         product2.getCourseCategory().add(prodCat4);
         product2.getCourseCategory().add(prodCat5);
         product2.getCourseCategory().add(prodCat6);
@@ -95,8 +98,9 @@ public class ProductServiceImpl implements ProductService {
         product3.setCourseName("Course Title 3");
         product3.setCourseSubtitle("Course Subtitle 3");
         product3.setCourseAuthor(at);
-        product3.setCoursePrice(new BigDecimal(19.99));
+        product3.setCoursePrice(new BigDecimal(19));
         product3.setCourseImageURL("https://game7staffing.com/media/seo/8-ENGINEER-STAFFING-FOR-EMERGING-TECH2.jpg");
+        product3.setCourseCategory(new ArrayList<Category>());
         product3.getCourseCategory().add(prodCat1);
         product3.getCourseCategory().add(prodCat3);
         product3.getCourseCategory().add(prodCat5);
@@ -108,8 +112,9 @@ public class ProductServiceImpl implements ProductService {
         product4.setCourseName("Course Title 4");
         product4.setCourseSubtitle("Course Subtitle 4");
         product4.setCourseAuthor(at);
-        product4.setCoursePrice(new BigDecimal(19.99));
+        product4.setCoursePrice(new BigDecimal(19));
         product4.setCourseImageURL("https://game7staffing.com/media/seo/8-ENGINEER-STAFFING-FOR-EMERGING-TECH2.jpg");
+        product4.setCourseCategory(new ArrayList<Category>());
         product4.getCourseCategory().add(prodCat2);
         product4.getCourseCategory().add(prodCat4);
         product4.getCourseCategory().add(prodCat6);
@@ -121,8 +126,9 @@ public class ProductServiceImpl implements ProductService {
         product5.setCourseName("Course Title 5");
         product5.setCourseSubtitle("Course Subtitle 5");
         product5.setCourseAuthor(at);
-        product5.setCoursePrice(new BigDecimal(19.99));
+        product5.setCoursePrice(new BigDecimal(19));
         product5.setCourseImageURL("https://game7staffing.com/media/seo/8-ENGINEER-STAFFING-FOR-EMERGING-TECH2.jpg");
+        product5.setCourseCategory(new ArrayList<Category>());
         product5.getCourseCategory().add(prodCat1);
         product5.getCourseCategory().add(prodCat2);
         product5.getCourseCategory().add(prodCat5);
@@ -134,8 +140,9 @@ public class ProductServiceImpl implements ProductService {
         product6.setCourseName("Course Title 6");
         product6.setCourseSubtitle("Course Subtitle 6");
         product6.setCourseAuthor(at);
-        product6.setCoursePrice(new BigDecimal(19.99));
+        product6.setCoursePrice(new BigDecimal(19));
         product6.setCourseImageURL("https://game7staffing.com/media/seo/8-ENGINEER-STAFFING-FOR-EMERGING-TECH2.jpg");
+        product6.setCourseCategory(new ArrayList<Category>());
         product6.getCourseCategory().add(prodCat3);
         product6.getCourseCategory().add(prodCat4);
         product6.getCourseCategory().add(prodCat6);
