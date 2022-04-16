@@ -24,7 +24,20 @@
                 </div>
             </div>
             <hr style="width: 75%">
-            <div class="row">
+            <br>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+                <tr th:each="product : ${products}">
+                    <td th:text="${product.id}"></td>
+                    <td th:text="${product.courseName}"></td>
+                </tr>
+            </table>
+
+            <div class="row" th:remove="all">
                 <div class="row">
                     <div class="col-md-4">
                         <a href="/product/1">
