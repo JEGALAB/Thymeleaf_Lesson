@@ -33,7 +33,7 @@
                     <p th:text="${product.courseAuthor}" id="pexampleA">This is the style example 1</p>
                 </div>
                 <div class="col-md-6">
-                    <p th:text="${product.coursePrice}" id="pexampleB">This is the style example 2</p>
+                    <p th:text="${product.coursePrice > 0 ?  '$' + product.coursePrice : 'FREE'}" id="pexampleB">This is the style example 2</p>
                 </div>
             </div>
         </div>
