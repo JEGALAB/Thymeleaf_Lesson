@@ -150,5 +150,4 @@ public class ProductServiceImpl implements ProductService {
         productMap.put(product6.getId(), product6);
 
     }
-
 }

@@ -30,10 +30,24 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p th:text="${product.courseAuthor}" id="pexampleA">This is the style example 1</p>
+                    <p th:text="${product.courseAuthor.firstName} + ${product.courseAuthor.lastName}" id="pexampleA">This is the style example 1</p>
                 </div>
                 <div class="col-md-6">
                     <p th:text="${product.coursePrice > 0 ?  '$' + product.coursePrice : 'FREE'}" id="pexampleB">This is the style example 2</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li th:each="cat : ${product.getCourseCategory()}">
+                            <a href="" th:text="${cat.getCategory()}"></a>
+                        </li>
+                    </ul>
+                    <ul th:remove="all">
+                        <li> <a href="">XXX-CAT1</a> </li>
+                        <li> <a href="">XXX-CAT1</a> </li>
+                        <li> <a href="">XXX-CAT1</a> </li>
+                    </ul>
                 </div>
             </div>
         </div>
